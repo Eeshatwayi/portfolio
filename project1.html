@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Support Chatbot | Portfolio Project</title>
+  <link rel="stylesheet" href="style_project1.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    <h1>Mental Health Support Chatbot 💬</h1>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <h2>About This Project</h2>
+      <p>
+        This project aims to create a safe and supportive chatbot platform — designed to help users 
+        share their emotions, find curated mental health resources, and practice self-care activities.  
+        Built using <strong>Dialogflow NLP</strong>, <strong>Firebase</strong>, and <strong>Express.js</strong>, 
+        the chatbot offers a seamless conversational experience combined with real-time feedback and resource recommendations.
+      </p>
+    </div>
+  </section>
+
+  <section class="tech">
+    <div class="container">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Dialogflow (Natural Language Processing)</li>
+        <li>Firebase and Firestore (Authentication & Database)</li>
+        <li>Node.js ,Express.js (Backend)</li>
+        <li>HTML, CSS, JavaScript (Frontend)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <h2>Project Screenshots</h2>
+      <div class="grid">
+  <div class="img-card">
+    <img src="assets/prj1_screen8.jpeg" alt="Home Page" onclick="openModal(this)">
+    <p>Home Page</p>
+  </div>
+  <div class="img-card">
+    <img src="assets/prj1_screen4.png" alt="How It Works Page" onclick="openModal(this)">
+    <p>How It Works Page</p>
+  </div>
+  <div class="img-card">
+    <img src="assets/prj1_screen3.png" alt="Resources Page" onclick="openModal(this)">
+    <p>Resources Page</p>
+  </div>
+  <div class="img-card">
+    <img src="assets/prj1_screen2.png" alt="Exercises Page" onclick="openModal(this)">
+    <p>Exercises Page</p>
+  </div>
+  <div class="img-card">
+    <img src="assets/prj1_screen6.jpeg" alt="Chat Interface" onclick="openModal(this)">
+    <p>Chat Interface</p>
+  </div>
+  <div class="img-card">
+    <img src="assets/prj1_screen7.jpeg" alt="Feedback Page" onclick="openModal(this)">
+    <p>Feedback Page</p>
+  </div>
+  <div class="img-card">
+    <img src="assets/prj1_screen5.jpeg" alt="Dashboard Page" onclick="openModal(this)">
+    <p>Dashboard Page</p>
+  </div>
+  <div class="img-card">
+    <img src="assets/prj1_screen1.png" alt="About Page" onclick="openModal(this)">
+    <p>About Page</p>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Eeshatwayi Annabathuni | Mental Health Chatbot Project</p>
+  </footer>
+
+  <!-- Modal for Enlarged Images -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modal-img" class="modal-content">
+  </div>
+
+  <script>
+    function openModal(img) {
+      document.getElementById("modal").style.display = "flex";
+      document.getElementById("modal-img").src = img.src;
+    }
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
